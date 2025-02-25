@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/odometer.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.animatedheadline.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/slider.css">
+
+    <link rel="stylesheet" href="css/stackedCards.css">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/css/myflaticon/flaticon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <meta name="csrf-token" content="GVokSNx6avaZDNJBkVPGU3xbv0uCXYFE8jD3hTTv">
+    <title>Bilito</title>    </head>
+
+    <body>
+        <!-- ==========Preloader========== -->
+<div class="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-icon">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+<!-- ==========Preloader========== -->
+<!-- ==========Overlay========== -->
+<div class="overlay"></div>
+<a href="concert.html#0" class="scrollToTop">
+    <i class="fas fa-angle-up"></i>
+</a>
+<!-- ==========Overlay========== -->
+
+<!-- ==========Header-Section========== -->
+<header class="header-section">
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo/logo.png" alt="logo">
+                </a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a class="" href="index.html"> خانه </a>
+                </li>
+                <li>
+                    <a class="" href="movie.html"> فیلم </a>
+                </li>
+                <li>
+                    <a class="active" href="concert.html"> کنسرت </a>
+                </li>
+                <li>
+                    <a class="" href="theater.html"> تئاتر</a>
+                </li>
+
+                <li>
+                    <a class="" href="http://127.0.0.1:8000/blog"> بلاگ </a>
+                </li>
+                <li>
+                    <a class="" href="about.html"> درباره ما </a>
+                </li>
+                <li>
+                    <a class="" href="contact.html"> تماس با ما </a>
+                </li>
+
+
+                <form class="ticket-search-form ml-4 mr-4" method="POST" action="http://127.0.0.1:8000/search">
+                    <input type="hidden" name="_token" value="GVokSNx6avaZDNJBkVPGU3xbv0uCXYFE8jD3hTTv">
+                    <div class="form-group">
+                        <input name="search" type="text" placeholder="جستجو">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                 </form>
+
+                                <li class="header-button pl-0">
+                                        <a href="login.html" style="padding:10px 15px"> ورود | عضویت </a>
+                                    </li>
+                
+            </ul>
+
+
+            <div class="header-bar d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ==========Header-Section========== -->
+                
+    <!-- ==========Banner-Section========== -->
+    <section class="banner-section">
+        <div class="banner-bg bg_img" data-background="http://127.0.0.1:8000/images/banner/banner05.jpg"></div>
+        <div class="container">
+            <div class="banner-content event-content">
+                <h1 class="title bold">بلیت <span class="color-theme">کنسرت </span> بخرید</h1>
+                <p>بلیت خود را برای کنسرت سریعتر از همه و بدون دغدغه تکمیل ظرفیت خریداری کنید.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Banner-Section========== -->
+
+
+<!-- ==========Ticket-Search========== -->
+    <section class="search-ticket-section padding-top pt-lg-0 mb-5">
+        <div class="container">
+            <div class="search-tab bg_img" data-background="http://127.0.0.1:8000/images/ticket/ticket-bg01.jpg">
+                <div class="row align-items-center mb--20">
+                    <div class="col-lg-6 mb-20">
+                        <div class="search-ticket-header text-right">
+                            <h6 class="category">به بیلیتو خوش آمدید</h6>
+                            <h3 class="title">به دنبال چه هستید</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-20">
+                        <ul class="tab-menu ticket-tab-menu">
+                            <li class="">
+                                <span>فیلم</span>
+                                <div class="tab-thumb">
+                                    <img src="images/ticket/ticket-tab01.png" alt="ticket">
+                                </div>
+                            </li>
+                            <li class="active">
+                                <span>کنسرت</span>
+                                <div class="tab-thumb">
+                                    <img src="images/ticket/ticket-tab02.png" alt="ticket">
+                                </div>
+                            </li>
+                            <li class="">
+                                <span>تئاتر</span>
+                                <div class="tab-thumb">
+                                    <img src="images/ticket/ticket-tab01.png" alt="ticket">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-area">
+                    <div class="tab-item ">
+                        <form class="ticket-search-form" method="POST" action="http://127.0.0.1:8000/searchmovie">
+                                <input type="hidden" name="_token" value="GVokSNx6avaZDNJBkVPGU3xbv0uCXYFE8jD3hTTv">
+                                <div class="form-group">
+                                <div class="thumb">
+                                    <img src="images/ticket/city.png" alt="ticket">
+                                </div>
+                                <span class="type mr-2">شهر</span>
+                                <select name="city" class="select-bar">
+                                    <option  value=""></option>
+                                                                        <option value="تهران">تهران</option>
+                                                                    </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="thumb">
+                                    <img src="images/ticket/date.png" alt="ticket">
+                                </div>
+                                <span class="type mr-2">تاریخ</span>
+                                <select name="date" class="select-bar">
+                                    <option  value=""></option>
+                                                                        <option  value="1399-02-01">1399-02-01</option>
+                                                                        <option  value="1399-02-10">1399-02-10</option>
+                                                                        <option  value="1399-02-12">1399-02-12</option>
+                                                                        <option  value="1399-02-14">1399-02-14</option>
+                                                                        <option  value="1399-02-22">1399-02-22</option>
+                                                                        <option  value="1399-02-23">1399-02-23</option>
+                                                                        <option  value="1399-02-25">1399-02-25</option>
+                                                                        <option  value="1399-02-26">1399-02-26</option>
+                                                                        <option  value="1399-02-27">1399-02-27</option>
+                                                                    </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="thumb">
+                                    <img src="images/ticket/cinema.png" alt="ticket">
+                                </div>
+                                <span class="type mr-2">سینما</span>
+                                <select name="cinema" class="select-bar">
+                                    <option  value=""></option>
+                                                                        <option  value="تالار وحدت">تالار وحدت</option>
+                                                                        <option  value="سینما آزادی">سینما آزادی</option>
+                                                                        <option  value="سینما ماندانا">سینما ماندانا</option>
+                                                                        <option  value="پردیس سینمایی ملت">پردیس سینمایی ملت</option>
+                                                                    </select>
+                            </div>
+                            <div class="form-group large">
+                                <input name="search" type="text" placeholder="جستجو برای فیلم">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-item active">
+                        <form class="ticket-search-form" method="POST" action="http://127.0.0.1:8000/searchconcert">
+                            <input type="hidden" name="_token" value="GVokSNx6avaZDNJBkVPGU3xbv0uCXYFE8jD3hTTv">
+                            <div class="form-group">
+                            <div class="thumb">
+                                <img src="images/ticket/city.png" alt="ticket">
+                            </div>
+                            <span class="type mr-2">شهر</span>
+                            <select name="city" class="select-bar">
+                                <option  value=""></option>
+                                                                <option value="تهران">تهران</option>
+                                                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="thumb">
+                                <img src="images/ticket/date.png" alt="ticket">
+                            </div>
+                            <span class="type mr-2">تاریخ</span>
+                            <select name="date" class="select-bar">
+                                <option  value=""></option>
+                                                                <option  value="1399-02-01">1399-02-01</option>
+                                                                <option  value="1399-02-10">1399-02-10</option>
+                                                                <option  value="1399-02-12">1399-02-12</option>
+                                                                <option  value="1399-02-14">1399-02-14</option>
+                                                                <option  value="1399-02-22">1399-02-22</option>
+                                                                <option  value="1399-02-23">1399-02-23</option>
+                                                                <option  value="1399-02-25">1399-02-25</option>
+                                                                <option  value="1399-02-26">1399-02-26</option>
+                                                                <option  value="1399-02-27">1399-02-27</option>
+                                                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="thumb">
+                                <img src="images/ticket/cinema.png" alt="ticket">
+                            </div>
+                            <span class="type mr-2">کنسرت</span>
+                            <select name="cinema" class="select-bar">
+                                <option  value=""></option>
+                                                                <option  value="تالار وحدت">تالار وحدت</option>
+                                                                <option  value="سینما آزادی">سینما آزادی</option>
+                                                                <option  value="سینما ماندانا">سینما ماندانا</option>
+                                                                <option  value="پردیس سینمایی ملت">پردیس سینمایی ملت</option>
+                                                            </select>
+                        </div>
+                        <div class="form-group large">
+                            <input name="search" type="text" placeholder="جستجو برای کنسرت">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="tab-item ">
+                        <form class="ticket-search-form" method="POST" action="http://127.0.0.1:8000/searchtheater">
+                            <input type="hidden" name="_token" value="GVokSNx6avaZDNJBkVPGU3xbv0uCXYFE8jD3hTTv">
+                            <div class="form-group">
+                            <div class="thumb">
+                                <img src="images/ticket/city.png" alt="ticket">
+                            </div>
+                            <span class="type mr-2">شهر</span>
+                            <select name="city" class="select-bar">
+                                <option  value=""></option>
+                                                                <option value="تهران">تهران</option>
+                                                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="thumb">
+                                <img src="images/ticket/date.png" alt="ticket">
+                            </div>
+                            <span class="type mr-2">تاریخ</span>
+                            <select name="date" class="select-bar">
+                                <option  value=""></option>
+                                                                <option  value="1399-02-01">1399-02-01</option>
+                                                                <option  value="1399-02-10">1399-02-10</option>
+                                                                <option  value="1399-02-12">1399-02-12</option>
+                                                                <option  value="1399-02-14">1399-02-14</option>
+                                                                <option  value="1399-02-22">1399-02-22</option>
+                                                                <option  value="1399-02-23">1399-02-23</option>
+                                                                <option  value="1399-02-25">1399-02-25</option>
+                                                                <option  value="1399-02-26">1399-02-26</option>
+                                                                <option  value="1399-02-27">1399-02-27</option>
+                                                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="thumb">
+                                <img src="images/ticket/cinema.png" alt="ticket">
+                            </div>
+                            <span class="type mr-2">تئاتر</span>
+                            <select name="cinema" class="select-bar">
+                                <option  value=""></option>
+                                                                <option  value="تالار وحدت">تالار وحدت</option>
+                                                                <option  value="سینما آزادی">سینما آزادی</option>
+                                                                <option  value="سینما ماندانا">سینما ماندانا</option>
+                                                                <option  value="پردیس سینمایی ملت">پردیس سینمایی ملت</option>
+                                                            </select>
+                        </div>
+                        <div class="form-group large">
+                            <input name="search" type="text" placeholder="جستجو برای تئاتر">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Ticket-Search========== -->
+
+
+    <!-- ==========Event-Section========== -->
+    <section class="event-section padding-top padding-bottom">
+        <div class="container">
+            <div class="row flex-wrap-reverse justify-content-center">
+                <div class="col-sm-10 col-md-8 col-lg-3">
+                    <div class="widget-1 widget-banner">
+                        <div class="widget-1-body">
+                            <a href="concert.html#0">
+                                <img src="images/sidebar/banner/banner01.jpg" alt="banner">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="widget-1 widget-check">
+                        <div class="widget-header">
+                            <h5 class="m-title">فیلتر</h5> <a href="concert.html" class="clear-check">پاک کردن همه</a>
+                        </div>
+                        <div class="widget-1-body">
+                            <h6 class="subtitle">دسته بندی ها</h6>
+                            <form method="post" action="http://127.0.0.1:8000/concertgenre">
+                                <input type="hidden" name="_token" value="GVokSNx6avaZDNJBkVPGU3xbv0uCXYFE8jD3hTTv">
+                            <div class="check-area">
+                                <div class="form-group">
+                                    <input type="checkbox" name="genre[]" value="*" id="genre0"><label for="genre0">همه</label>
+                                </div>
+                                                                <div class="form-group">
+                                    <input type="checkbox" name="genre[]" value="سنتی" id="genre9">
+                                    <label for="genre9">سنتی</label>
+                                </div>
+                                                                <div class="form-group">
+                                    <input type="checkbox" name="genre[]" value="پاپ" id="genre10">
+                                    <label for="genre10">پاپ</label>
+                                </div>
+                                                                <div class="form-group">
+                                    <input type="checkbox" name="genre[]" value="کلاسیک" id="genre12">
+                                    <label for="genre12">کلاسیک</label>
+                                </div>
+                                                            </div>
+                            <div class="add-check-area">
+                                <button style="background-image: -webkit-linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);" type="submit"> اعمال</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="widget-1 widget-banner">
+                        <div class="widget-1-body">
+                            <a href="concert.html#0">
+                                <img src="images/sidebar/banner/banner02.jpg" alt="banner">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mb-50 mb-lg-0">
+                    <div class="filter-tab tab">
+                        <div class="filter-area">
+                            <div class="filter-main">
+                                <div class="left w-100 justify-content-between">
+                                    <div class="item mr-0">
+                                        <span class="show">مرتب سازی  :</span>
+                                        <a class="select-b " href="http://127.0.0.1:8000/sortShowingConcert"onclick="event.preventDefault(); document.getElementById('sortShowing').submit();">
+                                            در حال نمایش</a>
+                                        <form id="sortShowing" action="http://127.0.0.1:8000/sortShowingConcert" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="GVokSNx6avaZDNJBkVPGU3xbv0uCXYFE8jD3hTTv">                                                                                        <input type="hidden" name="show[]" value="15">
+                                                                                        <input type="hidden" name="show[]" value="14">
+                                                                                        <input type="hidden" name="show[]" value="13">
+                                                                                        <input type="hidden" name="show[]" value="12">
+                                                                                        <input type="hidden" name="show[]" value="11">
+                                                                                    </form>
+                                    </div>
+                                    <ul class="grid-button tab-menu">
+                                        <li class="active">
+                                            <i class="fas fa-th"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-bars"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-area">
+                            <div class="tab-item active">
+                                <div class="row mb-10 justify-content-center">
+                                                                                                     <div class="col-sm-6 col-lg-4">
+                                    <div class="event-grid">
+                                        <div class="movie-thumb c-thumb">
+                                            <a href="concert-details/15.html">
+                                                <img width="220px" height="300px" src="images/concerts/salar-aghili.jpg" alt="event">
+                                            </a>
+                                        </div>
+                                        <div class="movie-content bg-one">
+                                            <h5 class="title m-0" style="font-size:1.1rem">
+                                            <a href="concert-details/15.html">سالار عقیلی</a>
+                                            </h5>
+                                            <div class="movie-rating-percent">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-4">
+                                    <div class="event-grid">
+                                        <div class="movie-thumb c-thumb">
+                                            <a href="concert-details/14.html">
+                                                <img width="220px" height="300px" src="images/concerts/chartar.jpg" alt="event">
+                                            </a>
+                                        </div>
+                                        <div class="movie-content bg-one">
+                                            <h5 class="title m-0" style="font-size:1.1rem">
+                                            <a href="concert-details/14.html">باران تویی</a>
+                                            </h5>
+                                            <div class="movie-rating-percent">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-4">
+                                    <div class="event-grid">
+                                        <div class="movie-thumb c-thumb">
+                                            <a href="concert-details/13.html">
+                                                <img width="220px" height="300px" src="images/concerts/makanband.jpg" alt="event">
+                                            </a>
+                                        </div>
+                                        <div class="movie-content bg-one">
+                                            <h5 class="title m-0" style="font-size:1.1rem">
+                                            <a href="concert-details/13.html">ماکان بند</a>
+                                            </h5>
+                                            <div class="movie-rating-percent">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-4">
+                                    <div class="event-grid">
+                                        <div class="movie-thumb c-thumb">
+                                            <a href="concert-details/12.html">
+                                                <img width="220px" height="300px" src="images/concerts/shajariyan.jpg" alt="event">
+                                            </a>
+                                        </div>
+                                        <div class="movie-content bg-one">
+                                            <h5 class="title m-0" style="font-size:1.1rem">
+                                            <a href="concert-details/12.html">محمدرضا شجریان و گروه شهناز</a>
+                                            </h5>
+                                            <div class="movie-rating-percent">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-4">
+                                    <div class="event-grid">
+                                        <div class="movie-thumb c-thumb">
+                                            <a href="concert-details/11.html">
+                                                <img width="220px" height="300px" src="images/concerts/shahram-nazeri.jpg" alt="event">
+                                            </a>
+                                        </div>
+                                        <div class="movie-content bg-one">
+                                            <h5 class="title m-0" style="font-size:1.1rem">
+                                            <a href="concert-details/11.html">شوالیه آواز</a>
+                                            </h5>
+                                            <div class="movie-rating-percent">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                </div>
+                            </div>
+                            <div class="tab-item">
+                                <div class="movie-area mb-10">
+                                                                <div class="movie-list">
+                                    <div class="movie-thumb c-thumb">
+                                        <a href="concert-details/15.html" class="w-75 bg_img" data-background="http://127.0.0.1:8000/images/concerts/salar-aghili.jpg">
+                                            <img src="images/concerts/salar-aghili.jpg" alt="movie">
+                                        </a>
+                                    </div>
+                                    <div class="movie-content bg-one">
+                                        <h5 class="title">
+                                        <a href="concert-details/15.html">سالار عقیلی</a>
+                                        </h5>
+                                        <div class="movie-tags">
+                                                                                        <a href="concert.html#0">سنتی</a>
+                                                                                    </div>
+                                        <div class="release">
+                                            <span>تاریخ نمایش : </span> <a href="concert.html#0">98/10/10
+-
+99/03/10</a>
+                                        </div>
+                                        <ul class="movie-rating-percent">
+                                        </ul>
+                                        <div class="book-area">
+                                            <div class="book-ticket">
+                                                <div class="react-item">
+                                                <a href="concert-details/15.html">
+                                                        <div class="thumb">
+                                                            <img src="images/icons/book.png" alt="icons">
+                                                        </div>
+                                                        <span class="mr-2">مشاهده جزئیات</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="movie-list">
+                                    <div class="movie-thumb c-thumb">
+                                        <a href="concert-details/14.html" class="w-75 bg_img" data-background="http://127.0.0.1:8000/images/concerts/chartar.jpg">
+                                            <img src="images/concerts/chartar.jpg" alt="movie">
+                                        </a>
+                                    </div>
+                                    <div class="movie-content bg-one">
+                                        <h5 class="title">
+                                        <a href="concert-details/14.html">باران تویی</a>
+                                        </h5>
+                                        <div class="movie-tags">
+                                                                                        <a href="concert.html#0">کلاسیک</a>
+                                                                                    </div>
+                                        <div class="release">
+                                            <span>تاریخ نمایش : </span> <a href="concert.html#0">98/10/10
+-
+99/03/10</a>
+                                        </div>
+                                        <ul class="movie-rating-percent">
+                                        </ul>
+                                        <div class="book-area">
+                                            <div class="book-ticket">
+                                                <div class="react-item">
+                                                <a href="concert-details/14.html">
+                                                        <div class="thumb">
+                                                            <img src="images/icons/book.png" alt="icons">
+                                                        </div>
+                                                        <span class="mr-2">مشاهده جزئیات</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="movie-list">
+                                    <div class="movie-thumb c-thumb">
+                                        <a href="concert-details/13.html" class="w-75 bg_img" data-background="http://127.0.0.1:8000/images/concerts/makanband.jpg">
+                                            <img src="images/concerts/makanband.jpg" alt="movie">
+                                        </a>
+                                    </div>
+                                    <div class="movie-content bg-one">
+                                        <h5 class="title">
+                                        <a href="concert-details/13.html">ماکان بند</a>
+                                        </h5>
+                                        <div class="movie-tags">
+                                                                                        <a href="concert.html#0">پاپ</a>
+                                                                                    </div>
+                                        <div class="release">
+                                            <span>تاریخ نمایش : </span> <a href="concert.html#0">98/10/10
+-
+99/03/10</a>
+                                        </div>
+                                        <ul class="movie-rating-percent">
+                                        </ul>
+                                        <div class="book-area">
+                                            <div class="book-ticket">
+                                                <div class="react-item">
+                                                <a href="concert-details/13.html">
+                                                        <div class="thumb">
+                                                            <img src="images/icons/book.png" alt="icons">
+                                                        </div>
+                                                        <span class="mr-2">مشاهده جزئیات</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="movie-list">
+                                    <div class="movie-thumb c-thumb">
+                                        <a href="concert-details/12.html" class="w-75 bg_img" data-background="http://127.0.0.1:8000/images/concerts/shajariyan.jpg">
+                                            <img src="images/concerts/shajariyan.jpg" alt="movie">
+                                        </a>
+                                    </div>
+                                    <div class="movie-content bg-one">
+                                        <h5 class="title">
+                                        <a href="concert-details/12.html">محمدرضا شجریان و گروه شهناز</a>
+                                        </h5>
+                                        <div class="movie-tags">
+                                                                                        <a href="concert.html#0">سنتی</a>
+                                                                                    </div>
+                                        <div class="release">
+                                            <span>تاریخ نمایش : </span> <a href="concert.html#0">98/10/10
+-
+99/03/10</a>
+                                        </div>
+                                        <ul class="movie-rating-percent">
+                                        </ul>
+                                        <div class="book-area">
+                                            <div class="book-ticket">
+                                                <div class="react-item">
+                                                <a href="concert-details/12.html">
+                                                        <div class="thumb">
+                                                            <img src="images/icons/book.png" alt="icons">
+                                                        </div>
+                                                        <span class="mr-2">مشاهده جزئیات</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="movie-list">
+                                    <div class="movie-thumb c-thumb">
+                                        <a href="concert-details/11.html" class="w-75 bg_img" data-background="http://127.0.0.1:8000/images/concerts/shahram-nazeri.jpg">
+                                            <img src="images/concerts/shahram-nazeri.jpg" alt="movie">
+                                        </a>
+                                    </div>
+                                    <div class="movie-content bg-one">
+                                        <h5 class="title">
+                                        <a href="concert-details/11.html">شوالیه آواز</a>
+                                        </h5>
+                                        <div class="movie-tags">
+                                                                                        <a href="concert.html#0">سنتی</a>
+                                                                                    </div>
+                                        <div class="release">
+                                            <span>تاریخ نمایش : </span> <a href="concert.html#0">۹۸/۱۰/۱۰
+-
+۹۹/۰۳/۱۰</a>
+                                        </div>
+                                        <ul class="movie-rating-percent">
+                                        </ul>
+                                        <div class="book-area">
+                                            <div class="book-ticket">
+                                                <div class="react-item">
+                                                <a href="concert-details/11.html">
+                                                        <div class="thumb">
+                                                            <img src="images/icons/book.png" alt="icons">
+                                                        </div>
+                                                        <span class="mr-2">مشاهده جزئیات</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                </div>
+                            </div>
+                        </div>
+                                                
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Movie-Section========== -->
+
+            <!-- ==========Newslater-Section========== -->
+<footer class="footer-section">
+    <div class="newslater-section padding-bottom">
+        <div class="container">
+            <div class="newslater-container bg_img" data-background="http://127.0.0.1:8000/images/newslater/newslater-bg01.jpg">
+                <div class="newslater-wrapper">
+                    <h5 class="cate">عضویت در خبرنامه بیلیتو</h5>
+                    <h3 class="title">برای دریافت مزایای اختصاصی</h3>
+                    <form class="newslater-form">
+                        <input type="text" placeholder="آدرس ایمیل">
+                        <button type="submit">عضویت</button>
+                    </form>
+                    <p>ما به حریم خصوصی شما احترام می گذاریم ، بنابراین هرگز اطلاعات شما را به اشتراک نمی گذاریم</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer-top">
+            <div class="logo">
+                <a href="http://127.0.0.1:8000/index-1.html">
+                    <img src="images/logo/logo.png" alt="footer">
+                </a>
+            </div>
+            <ul class="social-icons">
+                <li>
+                    <a href="concert.html#0">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="concert.html#0">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="concert.html#0">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="concert.html#0">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="concert.html#0">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-area">
+                <ul class="links">
+                    <li>
+                        <a href="concert.html#0">درباره ما</a>
+                    </li>
+                    <li>
+                        <a href="concert.html#0">راهنمای سایت</a>
+                    </li>
+                    <li>
+                        <a href="concert.html#0">قوانین</a>
+                    </li>
+                    <li>
+                        <a href="concert.html#0">سوالات رایج</a>
+                    </li>
+                    <li>
+                        <a href="concert.html#0">پشتیبانی</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ==========Newslater-Section========== -->
+        <!---start GOFTINO code--->
+<script type="text/javascript">
+    !function(){var a=window,d=document;function g(){var g=d.createElement("script"),s="https://www.goftino.com/widget/kWRGWk",l=localStorage.getItem("goftino");g.type="text/javascript",g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+  </script>
+  <!---end GOFTINO code--->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/modernizr-3.6.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/ChangeNumbers.js"></script>
+
+<script src="js/heandline.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/countdown.min.js"></script>
+<script src="js/odometer.min.js"></script>
+<script src="js/viewport.jquery.js"></script>
+<script src="js/nice-select.js"></script>
+
+<script src="js/stackedCards.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165352289-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165352289-1');
+</script>
+    </body>
+
+</html>
