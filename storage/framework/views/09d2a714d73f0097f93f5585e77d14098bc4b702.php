@@ -1,0 +1,1 @@
+<?php /**PATH C:\My Projects\Ticketing\resources\views\layouts\propartials\header.blade.php ENDPATH**/ ?>
