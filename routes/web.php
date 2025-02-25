@@ -87,9 +87,8 @@ Route::post('/walletTransaction', 'TransactionController@walletTransaction')->na
 
 Route::get('/printTicket/{id}', 'CheckoutController@printTicket')->name('printTicket');
 Route::get('/finalize/{id}', 'CheckoutController@finalize')->name('finalize');
-Route::get('/thank', function () {
-    return view('thank');
-});
+Route::get('/thank', 'StaticPageController@thank')->name('thank');
+
 
 // ===================End Buy=======================
 
